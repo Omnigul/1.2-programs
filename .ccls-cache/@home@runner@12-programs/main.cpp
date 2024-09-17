@@ -1,16 +1,16 @@
-//Calculating distance with a tank of gas
+//Calculating energy drink numbers
 #include <iostream>
 using namespace std;
 
-int GasTank=20;
-double TownGallons=23.5;
-double HywyGallons=28.9;
+int SurveyCount = 16500;
+int MultiBuy = 15;
+int Citrusphiles = 58;
 
 int main()
 {
-  double TownDistance = GasTank*TownGallons;
-  double HywyDistance = GasTank*HywyGallons;
+  double MultiBuyCount = SurveyCount * MultiBuy / 100;
+  double CitrusphilesCount = SurveyCount * Citrusphiles / 100;
 
-  cout << "you can go " << TownDistance << " miles on a full tank of gas in town" << endl;
-  cout << "you can go " << HywyDistance << " miles on a full tank of gas on the highway" << endl;
-}
+  cout << "The approximate number of customers purchasing one or more energy drinks per week is " << MultiBuyCount << endl;
+  cout << "The approximate number of customers that prefer citrus flavored energy drinks is " << CitrusphilesCount << endl;
+} 
